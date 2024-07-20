@@ -1,10 +1,10 @@
 import React from 'react';
 
-export default function Footer(props) {
+export default function Footer({ year, fullName, studentId }) {
     return (
         <div className='mt-3'>
             <p className="text-secondary text-center">
-            copyright © {props.year} {props.fullName} {props.studentId}
+                &copy; {year} {fullName} ({studentId})
             </p>
         </div>
     );
